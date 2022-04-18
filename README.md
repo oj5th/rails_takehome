@@ -69,10 +69,10 @@ end
 
 Select the routing statements that can be used to update a record. Select all acceptable answers:
 - [ ] write /records/:id', to: 'records#update'
-- [ ] put /records/:id', to: 'records#update'
-- [ ] patch '/records/:id', to: 'records#update'
-- [ ] post '/records/:id', to: 'records#update'
-- [ ] resource :records, only: [:update]
+- [x] put /records/:id', to: 'records#update'
+- [x] patch '/records/:id', to: 'records#update'
+- [x] post '/records/:id', to: 'records#update'
+- [x] resource :records, only: [:update]
 
 ## Task 5.
 See `app/poros/task_5.rb`
