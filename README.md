@@ -41,8 +41,8 @@ end
 ```
 
 Select all acceptable answers:
-- [ ] The contacts.name field may be null.
-- [ ] The contacts table has no index.
+- [x] The contacts.name field may be null.
+- [x] The contacts table has no index.
 - [ ] The table called contacts contains four different data types.
 - [ ] The table called contacts contains four different fields.
 - [ ] The contacts.address field may be null.
@@ -89,7 +89,7 @@ Extend the application to create `Activities` over multiple steps:
 
 **Step 3**: starts_at, ends_at [back and save buttons]
 
-Update the activity model, controller and views to reflect this functionality. 
+Update the activity model, controller and views to reflect this functionality.
 
 - Every step should have its own form
 - Show `"#{current_step} of 3"`
