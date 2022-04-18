@@ -5,7 +5,12 @@ class Task2
   # - Returns a hash containing an array of file names for each owner name, in any order.
 
   def group_by_owners(files)
-    #
+    new_hash = {}
+    files.values.each_with_index do |k,i|
+      new_hash[k] = [*new_hash[k]] << files.keys[i]
+     end
+
+     new_hash
   end
 
   # for hash `{'Input.txt' => 'Randy', 'Code.py' => 'Stan', 'Output.txt' => 'Randy'}`
@@ -17,7 +22,7 @@ class Task2
       'Code.py' => 'Stan',
       'Output.txt' => 'Randy'
     }
-    puts group_by_owners(files)
+    group_by_owners(files)
   end
 
 end
