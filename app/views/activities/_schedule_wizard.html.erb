@@ -1,0 +1,9 @@
+<div>
+  <%= form.label :starts_at, style: "display: block" %>
+  <%= form.datetime_field :starts_at, value: @current_activity&.starts_at&.strftime("%FT%T"), class: "form-input" %>
+</div>
+
+<div>
+  <%= form.label :ends_at, style: "display: block" %>
+  <%= form.datetime_field :ends_at, value: @current_activity&.ends_at&.strftime("%FT%T"), class: "form-input" %>
+</div>

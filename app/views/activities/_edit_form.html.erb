@@ -1,4 +1,4 @@
-<%= form_with(model: activity) do |form| %>
+<%= form_with(model: activity, url: activity_path, method: :put) do |form| %>
   <strong><%= "Step #{(activity.steps).index(activity.current_step) + 1} of #{activity.steps.count}" %></strong>
   <br>
   <% if activity.errors.any? %>

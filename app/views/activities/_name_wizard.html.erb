@@ -1,0 +1,4 @@
+<div>
+  <%= form.label :name, style: "display: block" %>
+  <%= form.text_field :name, value: @current_activity&.name || @activity&.name, class: "form-input" %>
+</div>
