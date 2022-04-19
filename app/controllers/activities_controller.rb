@@ -31,11 +31,13 @@ class ActivitiesController < ApplicationController
   def create
     saving_wizard
 
-    if @activity.new_record? && !params[:back_button]
-      render "new"
-    else
-      session[:activity_step] = session[:activity_params] = nil
-      flash[:notice] = "Activity was successfully created."
+    if !params[:back_button]
+      if @activity.new_record?
+        render "new"
+      else
+        session[:activity_step] = session[:activity_params] = nil
+        flash[:notice] = "Activity was successfully created."
+      end
     end
   end
 
